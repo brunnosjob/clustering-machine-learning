@@ -35,8 +35,7 @@ if pag == 'Interagir com a inteligência':
   st.subheader('Se cadastre em nosso app')
   st.markdown(' ')
   st.markdown(' ')
-  st.markdown(' ')
-  st.markdown(' ')
+  st.markdown('(Os valores a seguir podem ser reais ou fictícios. Os dados não são salvos.')
   
   #Chamando o modelo
   with open('cluster_fmcg.pkl', 'rb') as file:
