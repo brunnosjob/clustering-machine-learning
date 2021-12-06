@@ -116,7 +116,8 @@ if pag == 'Interagir com a inteligência':
     
     __Descrição do público alfa:__
     
-    O público alfa é predominantemente feminino, com idade de aproximadamente 30 anos, estando em algum tipo de relacionamento, como casamento ou união estável,
+    O público alfa é predominantemente feminino,
+    havendo uma menor quantidade masculina, com idade de aproximadamente 30 anos, estando em algum tipo de relacionamento, como casamento ou união estável,
     com educação formal básica, residindo maiormente em pequenas cidades. A maior parte está empregada, entretanto, significativa parte está desempregada.
     Nesse público há poucos empreendedores. A renda desse público está em torno de R$ 2.300,00.
     
