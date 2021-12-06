@@ -96,6 +96,16 @@ if pag == 'Interagir com a inteligência':
     variaveis_onehot_aplicada_df= pd.DataFrame(variaveis_onehot_aplicada)
     
     #Concatenando as variáveis
+    concat_df = pd.concat([variaveis_sem_onehot_df, variaveis_onehot_aplicada_df], axis=1)
+    
+    #Padronizando
+    X_scaled = std_scaler.transform(concat_df)
+    
+    #Segmentando
+    segmento = kmeans.predict(X_scaled)
+    
+    #Resultado
+    st.write(segmento)
     
     
     
