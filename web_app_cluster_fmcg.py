@@ -19,7 +19,7 @@ from PIL import Image
 st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
 st.sidebar.markdown('''Em breve, disponibilizo o artigo descrevendo o passo a passo do desenvolvimento do modelo.''')
 st.sidebar.title('Menu em construção')
-pag = st.sidebar.selectbox('Selecione a página', ['Interagir com a inteligência', 'Sobre o projeto', 'Dashboard acerca dos públicos'])
+pag = st.sidebar.selectbox('Selecione a página', ['Interagir com a inteligência', 'Questão de negócio', 'Dashboard acerca dos públicos'])
 
 st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
 
@@ -162,7 +162,7 @@ if pag == 'Interagir com a inteligência':
     e a menor parte empreendedora.
     '''.format(cliente))
     
-elif pag == 'Sobre o projeto':
+elif pag == 'Questão de negócio':
   st.header('Questão de negócio')
   st.markdown('''
   Um grupo gestor do supermercado (fictício) Vitta está investindo em tecnologia.
