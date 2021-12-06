@@ -65,7 +65,7 @@ if pag == 'Interagir com a inteligência':
    
     
   #Convertendo inputs sexo
-   if sexo == 'Feminino':
+  if sexo == 'Feminino':
     sexo_num = 0
   elif sexo == 'Masculino':
     sexo_num = 1
