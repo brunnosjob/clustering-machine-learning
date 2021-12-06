@@ -315,11 +315,9 @@ elif pag == 'Dashboard':
   2 - Cidade grande
   ''')
   st.markdown(' ')
-  st.markdown(' ')  
-  
-  st.markdown('''
-  ---
-  ''')
+  st.markdown(' ') 
+  st.markdown(' ')
+  st.markdown(' ') 
 
   st.subheader('Público beta')
   
@@ -405,11 +403,9 @@ elif pag == 'Dashboard':
   2 - Cidade grande
   ''')
   st.markdown(' ')
-  st.markdown(' ')  
-  
-    st.markdown('''
-    ---
-    ''')
+  st.markdown(' ') 
+  st.markdown(' ')
+  st.markdown(' ') 
 
   st.subheader('Público gamma')
   
