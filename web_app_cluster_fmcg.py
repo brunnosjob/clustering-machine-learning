@@ -160,8 +160,58 @@ if pag == 'Interagir com a inteligência':
     '''.format(cliente))
     
 elif pag == 'Sobre o projeto':
-  st.header('Página em construção!')
-  st.subheader('Em breve, disponível')
+  st.title('Contextualização')
+  st.markdown('''
+  #### Questão de negócio
+  
+  Um grupo gestor do supermercado (fictício) Vitta está investindo em tecnologia.
+  Seu último projeto bem sucedido foi a criação do Vitta Delivery.
+  A empresa de varejo desenvolveu um aplicativo a partir do qual seus clientes realizam suas compras online e o supermercado faz a entrega.
+  
+  O supermercado está com um novo projeto a desenvolver a partir de um piloto.
+  O projeto se constitui do interesse por segmentar seus clientes para elaborar campanhas de marketing específicas para os públicos certos.
+  O envio das campanhas é feita via app diretamente ao celular do usuário.
+  
+  __Plano de trabalho:__
+  
+  1 - Segmentar os clientes em públicos;
+  
+  2 - Compreender o perfil social e socioeconômico dos públicos;
+  
+  3 - Compreender o consumo dos públicos;
+  
+  4 - Elaborar campanhas de marketing;
+  
+  5 - Definir os métodos de entrega das campanhas;
+  
+  6 - Acompanhar por métricas as respostas dos clientes às entregas e às camapnhas;
+  
+  7 - Alterar/ajustar os métodos de entrega das campanhas e as camapnhas;
+  
+  8 - Conclusão do piloto
+  
+  A aplicação do pilto terá um primeiro prazo, que é de três meses. Após, terá mais 3 meses.
+  
+  __- Primeiro mês:__ 
+  Aplica o primeiro método de entrega com a primeira campanha concernente a cada público. Avalia a reação dos públicos durante as duas primeiras semanas.
+  
+  Métricas a serem observadas:
+  
+  - Cliques para abrir as propagandas;
+  
+  - Aumento de compras online por parte dos públicos.
+  
+  Após as duas primeiras semanas, cria uma nova campanha ou aprimora a já aplicada, na terceira semana.
+  Avalia novamente durante duas semanas. A quinta semana já é a primeira semana do segundo mês.
+  
+  __ - Segundo mês:__
+  Na segunda semana do segundo mês, cria uma nova campanha.
+  Avalia novamente a resposta dos clientes durante duas semanas.
+  Encerra o segundo mês.
+  
+  __- Terceiro mês:__
+  
+  ''')
   
 elif pag == 'Dashboard':
   st.header('Página em construção!')
