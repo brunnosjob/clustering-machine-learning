@@ -132,3 +132,14 @@ if pag == 'Interagir com a inteligência':
     É um público solteiro e graduado, residindo em pequenas cidades. A maior parte do grupo está desempregada. Mas há uma relevante quantidade de pessoas empregadas.
     Esse público não tem perfil empreendedor. Sua renda está em torno de R$ 2.000,00. 25% do público apresenta renda de até aproximadamente 1.600,00.
     '''.format(cliente))
+    
+  elif segmento == 2:
+    st.markdown('''
+    {} pertence ao público gama.
+    
+    __Descrição do público gama:__
+    
+    O público gama é predominantemente masculino solteiro, com idade de aproximadamente 38 anos. Há uma relevante quantidade de componentes em relacionamento,
+    como casamento ou união estável. Possuem ensino superior e residem em médias e grandes cidades. É o público mais empreendedor, sendo a maior parte empregada,
+    e a menor parte empreendedora.
+    '''.format(cliente))
