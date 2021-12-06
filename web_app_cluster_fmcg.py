@@ -112,7 +112,7 @@ if pag == 'Interagir com a inteligência':
   if segmento == 0:
     st.markdown('''
     ---
-    ###### Informação para a empresa
+    ##### Informação para a empresa
     
     __A que público o cliente pertence:__
     
@@ -131,7 +131,7 @@ if pag == 'Interagir com a inteligência':
     st.markdown('''
     
     ---
-    ###### Informação para a empresa
+    ##### Informação para a empresa
     
     __A que público o cliente pertence:__
     
@@ -148,7 +148,7 @@ if pag == 'Interagir com a inteligência':
     st.markdown('''
     
     ---
-    ###### Informação para a empresa
+    ##### Informação para a empresa
     
     __A que público o cliente pertence:__
     
