@@ -19,4 +19,10 @@ from sklearn.cluster import KMeans
 #Criando interface inicial
 st.header('Bem-vindo (a) à web app de segmentação de cliente')
 st.subheader('Tecnologia machine learning aplicada ao interesse do marketing')
+st.markdown(' ')
+st.markdown(' ')
 
+#Criando espaços de preenchimento
+cliente = st.text_input('Insira o nome do cliente:')
+renda = st.number_input('Insira a renda do cliente:', 0, 1000000, 0)
+idade = st.number_input('Insira a idade do cliente:', 18, 150, 18)
