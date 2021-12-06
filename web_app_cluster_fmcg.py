@@ -123,7 +123,7 @@ if pag == 'Interagir com a inteligência':
     '''.format(cliente))
    
   elif segmento == 1:
-    st.markdwon('''
+    st.markdown('''
     {} pertence ao público beta.
     
     __Descrição do público beta:__
