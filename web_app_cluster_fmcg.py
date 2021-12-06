@@ -48,7 +48,7 @@ if pag == 'Interagir com a inteligência':
   ocupacao = st.selectbox('Selecione a ocupação do cliente:',['Desempregado', 'Empregado', 'Empreendedor'])
   sexo = st.selectbox('Selecione o sexo do cliente:', ['Feminino', 'Masculino'])
   estado_civil = st.selectbox('Selecione o estado civil do cliente:', ['Solteiro', 'Casado'])
-  tamanho_cidade = st.selectbox('Selecione o tamanho da cidade em que o cliente reside:', ['Pequena', 'Média', 'Grande'])
+  tamanho_cidade = st.selectbox('Selecione o tamanho da cidade em que o cliente reside:', ['Pequena cidade', 'Média cidade', 'Grande cidade'])
   
   #Convertendo inputs educação
   if educacao == 'Ensino básico':
