@@ -116,6 +116,8 @@ if pag == 'Interagir com a inteligência':
     st.markdown('''
     {}, você pertence ao público alfa.
     
+    #### OBS: A informação a seguir seria conhecida apenas pela empresa do app
+    
     __Descrição do público alfa:__
     
     O público alfa é predominantemente feminino,
@@ -129,6 +131,8 @@ if pag == 'Interagir com a inteligência':
     st.markdown('''
     {}, você pertence ao público beta.
     
+    #### OBS: A informação a seguir seria conhecida apenas pela empresa do app
+    
     __Descrição do público beta:__
     
     O público beta é composto pela maioria masculina, todavia, uma quantidade considerável de mulheres compõem esse grupo. A idade desse público está em cerca de 35 anos.
@@ -139,6 +143,8 @@ if pag == 'Interagir com a inteligência':
   elif segmento == 2:
     st.markdown('''
     {}, você pertence ao público gama.
+    
+    #### OBS: A informação a seguir seria conhecida apenas pela empresa do app
     
     __Descrição do público gama:__
     
