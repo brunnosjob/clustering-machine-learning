@@ -117,7 +117,7 @@ if pag == 'Interagir com a inteligência':
     {}, você pertence ao público alfa.
     
     #### OBS:
-    #### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery
+    #### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery para fins do marketing
     
     __Descrição do público alfa:__
     
@@ -133,7 +133,7 @@ if pag == 'Interagir com a inteligência':
     {}, você pertence ao público beta.
     
     #### OBS:
-    #### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery
+    #### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery para fins do marketing
     
     __Descrição do público beta:__
     
@@ -147,7 +147,7 @@ if pag == 'Interagir com a inteligência':
     {}, você pertence ao público gama.
     
     #### OBS:
-    #### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery
+    #### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery para fins do marketing
     
     __Descrição do público gama:__
     
