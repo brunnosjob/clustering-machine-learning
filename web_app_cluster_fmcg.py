@@ -111,7 +111,7 @@ if pag == 'Interagir com a inteligência':
     
   #Resultado
   st.markdown('Teste')
-  st.markdown('Resultado:',segmento)
+  st.markdown(segmento)
     
     
     
