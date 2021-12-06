@@ -38,7 +38,7 @@ if pag == 'Interagir com a inteligência':
   
   #Chamando o modelo
   with open('cluster_fmcg.pkl', 'rb') as file:
-    onehot, std_scaler, kmeans = pickle.load(file)
+    onehot, scaler, kmeans = pickle.load(file)
 
   #Criando espaços de preenchimento
   cliente = st.text_input('Insira o nome do cliente:')
@@ -104,7 +104,7 @@ if pag == 'Interagir com a inteligência':
   df = pd.concat([variaveis_sem_onehot_df, variaveis_onehot_aplicada_df], axis=1)
     
   #Padronizando
-  X_scaled = std_scaler.transform(df).toarray()
+  X_scaled = scaler.transform(df)
     
   #Segmentando
   segmento = kmeans.predict(X_scaled)
