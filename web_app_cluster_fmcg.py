@@ -192,8 +192,11 @@ elif pag == 'Sobre o projeto':
   
   A aplicação do pilto terá um primeiro prazo, que é de três meses. Após, terá mais 3 meses.
   
-  __- Primeiro mês:__ 
-  Aplica o primeiro método de entrega com a primeira campanha concernente a cada público. Avalia a reação dos públicos durante as duas primeiras semanas.
+  __Etapas:__ 
+  
+  - A primeira  e a segunda semana de cada mês ficarão para o desenvolvimento de novas campanhas ou o aprimoramento das já aplicadas;
+  
+  - A terceira e a quarta semana ficarão para análise da resposta e reação dos clientes;
   
   Métricas a serem observadas:
   
@@ -201,16 +204,28 @@ elif pag == 'Sobre o projeto':
   
   - Aumento de compras online por parte dos públicos.
   
-  Após as duas primeiras semanas, cria uma nova campanha ou aprimora a já aplicada, na terceira semana.
-  Avalia novamente durante duas semanas. A quinta semana já é a primeira semana do segundo mês.
+__Métodos de entregas a serem testados:__
+
+- Vídeo-propaganda diretamente em tela de celular após abertura de aplicativo;
+
+- Imagem gráfica diretamente em tela de celular após abertura de aplicativo;
+
+- Vídeo-propaganda via email;
+
+- Imagem gráfica via email;
+
+- Vídeo-propaganda via sms;
+
+- Imagem gráfica via sms.
   
-  __ - Segundo mês:__
-  Na segunda semana do segundo mês, cria uma nova campanha.
-  Avalia novamente a resposta dos clientes durante duas semanas.
-  Encerra o segundo mês.
+Ao fim de cada três meses, há uma reunião com os resultados trimestrais do piloto.
+  ''')
   
-  __- Terceiro mês:__
-  
+  st.markdown('#### Etapa do presente projeto')
+  st.markdown('''
+  O presente projeto se constitui em segmentar os clientes, 
+  realizar análises e desenvolver um modelo de machine learning que segmente cada novo cliente cadastrado pelo aplicativo.
+  Somente a empresa terá acesso ao pertencimento de cada cliente aos seus respectivos públicos.
   ''')
   
 elif pag == 'Dashboard':
