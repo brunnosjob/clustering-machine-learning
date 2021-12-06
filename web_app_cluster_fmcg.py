@@ -17,7 +17,7 @@ from sklearn.cluster import KMeans
 #Menu
 st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
 st.sidebar.markdown('''Em breve, disponibilizo o artigo descrevendo o passo a passo do desenvolvimento do modelo.''')
-st.sidebar.title('Menu')
+st.sidebar.title('Menu em construção')
 pag = st.sidebar.selectbox('Selecione a página', ['Interagir com a inteligência', 'Sobre o projeto', 'Dashboard'])
 
 st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
@@ -35,7 +35,7 @@ if pag == 'Interagir com a inteligência':
   st.subheader('Se cadastre em nosso app')
   st.markdown(' ')
   st.markdown(' ')
-  st.markdown('(Os valores a seguir podem ser reais ou fictícios. Os dados não são salvos.')
+  st.markdown('(Os valores a seguir podem ser reais ou fictícios. Os dados não são salvos)')
   
   #Chamando o modelo
   with open('cluster_fmcg.pkl', 'rb') as file:
