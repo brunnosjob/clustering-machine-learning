@@ -316,3 +316,89 @@ elif pag == 'Dashboard':
   ''')
   st.markdown(' ')
   st.markdown(' ')  
+
+  st.subheader('Público beta')
+  
+  photo10 = Image.open('1_renda.png')
+  st.image(photo10, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo11 = Image.open('1_idade.png')
+  st.image(photo11, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo12 = Image.open('1_educacao.png')
+  st.image(photo12, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Ensino básico
+  
+  1 - Graduado (a)
+  
+  2 - Especializado (a)
+  
+  3 - Doutor (a)
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo13 = Image.open('1_ocupacao.png')
+  st.image(photo13, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Desempregado
+  
+  1 - Empregado
+  
+  2 - Empreendedor
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo14 = Image.open('1_sexo.png')
+  st.image(photo14, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Masculino
+  
+  1 - Feminino
+  
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+ 
+  photo15 = Image.open('1_estado_civil.png')
+  st.image(photo15, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Solteiro
+  
+  1 - Em relacionamento (Casado ou união estável)
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo16 = Image.open('1_tamanho_cidade.png')
+  st.image(photo16, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Cidade pequena
+  
+  1 - Cidade média
+  
+  2 - Cidade grande
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')  
