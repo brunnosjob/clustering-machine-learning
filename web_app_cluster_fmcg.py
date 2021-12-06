@@ -317,7 +317,7 @@ elif pag == 'Dashboard':
   st.markdown(' ')
   st.markdown(' ')  
   
-  st.markdown('---')
+  st.markdown('''---''')
 
   st.subheader('Público beta')
   
@@ -405,7 +405,7 @@ elif pag == 'Dashboard':
   st.markdown(' ')
   st.markdown(' ')  
   
-    st.markdown('---')
+    st.markdown('''---''')
 
   st.subheader('Público gamma')
   
