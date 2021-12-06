@@ -129,9 +129,11 @@ if pag == 'Interagir com a inteligência':
    
   elif segmento == 1:
     st.markdown('''
-    __A que público você pertence:__
     
-    {}, você pertence ao público beta.
+    ---
+    __A que público o cliente pertence:__
+    
+    {} pertence ao público beta.
     
     #### OBS:
     #### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery para fins do marketing
