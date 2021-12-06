@@ -302,7 +302,7 @@ elif pag == 'Dashboard':
   st.markdown(' ')
   st.markdown(' ')
   
-  photo6 = Image.open('0_tamanho_civil.png')
+  photo6 = Image.open('0_tamanho_cidade.png')
   st.image(photo6, use_column_width=True)
   st.markdown('''
   
