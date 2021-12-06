@@ -97,14 +97,14 @@ if pag == 'Interagir com a inteligência':
   #Aplicando OneHotEncoder
   #Separando variáveis que receberão o algoritmo OneHotEncoder e gerando dataframe
   variaveis_onehot = [[sexo_num, estado_civil_num, tamanho_cidade_num]]
-  variaveis_onehot_aplicada = onehot.transform(variaveis_onehot)
+  variaveis_onehot_aplicada = onehot.transform(variaveis_onehot).toarray()
   variaveis_onehot_aplicada_df= pd.DataFrame(variaveis_onehot_aplicada)
     
   #Concatenando as variáveis
   df = pd.concat([variaveis_sem_onehot_df, variaveis_onehot_aplicada_df], axis=1)
     
   #Padronizando
-  X_scaled = std_scaler.transform(df)
+  X_scaled = std_scaler.transform(df).toarray()
     
   #Segmentando
   segmento = kmeans.predict(X_scaled)
