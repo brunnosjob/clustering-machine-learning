@@ -231,6 +231,22 @@ Ao fim de cada três meses, há uma reunião com os resultados trimestrais do pi
   
 elif pag == 'Dashboard':
   st.header('Dashboard acerca dos públicos')
+  st.subheader('PCA')
+  pca = Image.open(pca.png')
+  st.image(pca, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ') 
+  st.markdown(' ')
+  st.markdown(' ') 
+                   
+  st.subheader('Contagem de clientes em cada público/grupo')
+  contagem = Image.open(frequencia_cada_publico.png')
+  st.image(contagem, use_column_width=True)  
+  st.markdown(' ')
+  st.markdown(' ') 
+  st.markdown(' ')
+  st.markdown(' ') 
+  
   st.subheader('Público alfa')
   
   photo0 = Image.open('0_renda.png')
