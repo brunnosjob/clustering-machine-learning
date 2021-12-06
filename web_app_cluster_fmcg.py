@@ -12,6 +12,7 @@ import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
+from PIL import Image
 
 #Criando interface inicial
 #Menu
