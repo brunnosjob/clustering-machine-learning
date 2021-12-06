@@ -110,6 +110,7 @@ if pag == 'Interagir com a inteligência':
     segmento = kmeans.predict(X_scaled)
     
     #Resultado
+    st.markdown('Teste')
     st.markdown('Resultado:',segmento)
     
     
