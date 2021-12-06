@@ -129,6 +129,6 @@ if pag == 'Interagir com a inteligência':
     __Descrição do público beta:__
     
     O público beta é composto pela maioria masculina, todavia, uma quantidade considerável de mulheres compõem esse grupo. A idade desse público está em cerca de 35 anos.
-    É um público solteiro e graduado, residindo em pequenas cidades. A maior parte do grupo está desempregada, enquanto a menor parte está empregada.
+    É um público solteiro e graduado, residindo em pequenas cidades. A maior parte do grupo está desempregada. Mas há uma relevante quantidade de pessoas empregadas.
     Esse público não tem perfil empreendedor. Sua renda está em torno de R$ 2.000,00. 25% do público apresenta renda de até aproximadamente 1.600,00.
     '''.format(cliente))
