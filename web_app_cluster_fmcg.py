@@ -152,3 +152,11 @@ if pag == 'Interagir com a inteligência':
     como casamento ou união estável. Possuem ensino superior e residem em médias e grandes cidades. É o público mais empreendedor, sendo a maior parte empregada,
     e a menor parte empreendedora.
     '''.format(cliente))
+    
+elif pag == 'Sobre o projeto':
+  st.header('Página em construção!')
+  st.subheader('Em breve, disponível')
+  
+elif pag == 'Dashboard':
+  st.header('Página em construção!')
+  st.subheader('Em breve, disponível')
