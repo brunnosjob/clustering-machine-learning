@@ -238,7 +238,7 @@ elif pag == 'Dashboard':
   st.markdown(' ')
   st.markdown(' ')
   
-  phot1 = Image.open('0_idade.png')
+  photo1 = Image.open('0_idade.png')
   st.image(photo1, use_column_width=True)
   st.markdown(' ')
   st.markdown(' ')
