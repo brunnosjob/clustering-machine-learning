@@ -208,13 +208,13 @@ __Métodos de entregas a serem testados:__
 
 - Imagem gráfica diretamente em tela de celular após abertura de aplicativo;
 
-- Vídeo-propaganda via email;
+- Vídeo-propaganda via link em email;
 
-- Imagem gráfica via email;
+- Imagem gráfica via link em email;
 
-- Vídeo-propaganda via sms;
+- Vídeo-propaganda via link em sms;
 
-- Imagem gráfica via sms.
+- Imagem gráfica via link em sms.
   
 Ao fim de cada três meses, há uma reunião com os resultados trimestrais do piloto.
   ''')
