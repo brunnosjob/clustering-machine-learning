@@ -31,8 +31,10 @@ st.sidebar.markdown("- [Github](https://github.com/brunnosjob)")
 #Apresentação da tela de interação com o modelo
 if pag == 'Interagir com a inteligência':
   st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__* ')
-  st.header('Bem-vindo (a) à web app de segmentação de cliente')
-  st.subheader('Tecnologia machine learning aplicada ao interesse do marketing')
+  st.header('Mercado Delivery')
+  st.subheader('Se cadastre em nosso app')
+  st.markdown(' ')
+  st.markdown(' ')
   st.markdown(' ')
   st.markdown(' ')
   
@@ -41,14 +43,14 @@ if pag == 'Interagir com a inteligência':
     onehot, scaler, kmeans = pickle.load(file)
 
   #Criando espaços de preenchimento
-  cliente = st.text_input('Insira o nome do cliente:')
-  renda = st.number_input('Insira a renda do cliente:', 0, 1000000, 0)
-  idade = st.number_input('Insira a idade do cliente:', 18, 150, 18)
-  educacao = st.selectbox('Selecione a escolaridade do cliente:', ['Ensino básico', 'Graduado (a)', 'Especializado (a)', 'Doutor (a)'])
-  ocupacao = st.selectbox('Selecione a ocupação do cliente:',['Desempregado', 'Empregado', 'Empreendedor'])
-  sexo = st.selectbox('Selecione o sexo do cliente:', ['Feminino', 'Masculino'])
-  estado_civil = st.selectbox('Selecione o estado civil do cliente:', ['Solteiro', 'Casado'])
-  tamanho_cidade = st.selectbox('Selecione o tamanho da cidade em que o cliente reside:', ['Cidade pequena', 'Cidade média', 'Cidade grande'])
+  cliente = st.text_input('Insira seu nome:')
+  renda = st.number_input('Insira sua renda:', 0, 1000000, 0)
+  idade = st.number_input('Insira sua idade:', 18, 150, 18)
+  educacao = st.selectbox('Selecione sua escolaridade:', ['Ensino básico', 'Graduado (a)', 'Especializado (a)', 'Doutor (a)'])
+  ocupacao = st.selectbox('Selecione sua condição atual:',['Desempregado', 'Empregado', 'Empreendedor'])
+  sexo = st.selectbox('Selecione seu sexo:', ['Feminino', 'Masculino'])
+  estado_civil = st.selectbox('Selecione seu estado civil:', ['Solteiro', 'Casado'])
+  tamanho_cidade = st.selectbox('Selecione o tipo de cidade em que você reside:', ['Cidade pequena', 'Cidade média', 'Cidade grande'])
   
   #Convertendo inputs educação
   if educacao == 'Ensino básico':
@@ -112,7 +114,7 @@ if pag == 'Interagir com a inteligência':
   #Instrução para o resultado
   if segmento == 0:
     st.markdown('''
-    {} pertence ao público alfa.
+    {}, você pertence ao público alfa.
     
     __Descrição do público alfa:__
     
@@ -125,7 +127,7 @@ if pag == 'Interagir com a inteligência':
    
   elif segmento == 1:
     st.markdown('''
-    {} pertence ao público beta.
+    {}, você pertence ao público beta.
     
     __Descrição do público beta:__
     
@@ -136,7 +138,7 @@ if pag == 'Interagir com a inteligência':
     
   elif segmento == 2:
     st.markdown('''
-    {} pertence ao público gama.
+    {}, você pertence ao público gama.
     
     __Descrição do público gama:__
     
