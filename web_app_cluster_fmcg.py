@@ -111,6 +111,8 @@ if pag == 'Interagir com a inteligência':
   #Instrução para o resultado
   if segmento == 0:
     st.markdown('''
+    __A que público você pertence:__
+    
     {}, você pertence ao público alfa.
     
     #### OBS:
@@ -127,6 +129,8 @@ if pag == 'Interagir com a inteligência':
    
   elif segmento == 1:
     st.markdown('''
+    __A que público você pertence:__
+    
     {}, você pertence ao público beta.
     
     #### OBS:
@@ -141,6 +145,8 @@ if pag == 'Interagir com a inteligência':
     
   elif segmento == 2:
     st.markdown('''
+    __A que público você pertence:__
+    
     {}, você pertence ao público gama.
     
     #### OBS:
