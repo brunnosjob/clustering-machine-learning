@@ -219,9 +219,9 @@ __Métodos de entregas a serem testados:__
 Ao fim de cada três meses, há uma reunião com os resultados trimestrais do piloto.
   ''')
   
-  st.markdown('#### Etapa do presente projeto')
+  st.markdown('#### Etapa atual')
   st.markdown('''
-  O presente projeto se constitui em segmentar os clientes, 
+  A presente etapa se constitui em segmentar os clientes, 
   realizar análises e desenvolver um modelo de machine learning que segmente cada novo cliente cadastrado pelo aplicativo.
   Somente a empresa terá acesso ao pertencimento de cada cliente aos seus respectivos públicos.
   ''')
