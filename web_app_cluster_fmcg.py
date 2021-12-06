@@ -115,6 +115,8 @@ if pag == 'Interagir com a inteligência':
     ---
     ##### Informação para a empresa
     
+    Há três públicos.
+    
     __A que público o cliente pertence:__
     
     {} pertence ao público alfa.
@@ -134,6 +136,8 @@ if pag == 'Interagir com a inteligência':
     ---
     ##### Informação para a empresa
     
+    Há três públicos.
+    
     __A que público o cliente pertence:__
     
     {} pertence ao público beta.
@@ -150,6 +154,8 @@ if pag == 'Interagir com a inteligência':
     
     ---
     ##### Informação para a empresa
+    
+    Há três públicos.
     
     __A que público o cliente pertence:__
     
