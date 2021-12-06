@@ -120,6 +120,15 @@ if pag == 'Interagir com a inteligência':
     com educação formal básica, residindo maiormente em pequenas cidades. A maior parte está empregada, entretanto, significativa parte está desempregada.
     Nesse público há poucos empreendedores. A renda desse público está em torno de R$ 2.300,00.
     
-    ''')
+    '''.format(cliente))
    
+  elif segmento == 1:
+    st.markdwon('''
+    {} pertence ao público beta.
     
+    __Descrição do público beta:__
+    
+    O público beta é composto pela maioria masculina e a minoria feminina. A idade desse público está em cerca de 35 anos.
+    É um público solteiro e graduado, residindo em pequenas cidades. A maior parte do grupo está desempregada, enquanto a menor parte está empregada.
+    Esse público não tem perfil empreendedor. Sua renda está em torno de R$ 2.000,00. 25% do público apresenta renda de até aproximadamente 1.600,00.
+    '''.format(cliente))
