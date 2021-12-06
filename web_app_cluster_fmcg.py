@@ -116,7 +116,8 @@ if pag == 'Interagir com a inteligência':
     st.markdown('''
     {}, você pertence ao público alfa.
     
-    #### OBS: A informação a seguir seria conhecida apenas pela empresa do app
+    #### OBS:
+    ###### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery
     
     __Descrição do público alfa:__
     
@@ -131,7 +132,8 @@ if pag == 'Interagir com a inteligência':
     st.markdown('''
     {}, você pertence ao público beta.
     
-    #### OBS: A informação a seguir seria conhecida apenas pela empresa do app
+    #### OBS:
+    ###### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery
     
     __Descrição do público beta:__
     
@@ -144,7 +146,8 @@ if pag == 'Interagir com a inteligência':
     st.markdown('''
     {}, você pertence ao público gama.
     
-    #### OBS: A informação a seguir seria conhecida apenas pela empresa do app
+    #### OBS:
+    ###### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery
     
     __Descrição do público gama:__
     
