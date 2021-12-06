@@ -34,6 +34,11 @@ if pag == 'Interagir com a inteligência':
   st.subheader('Tecnologia machine learning aplicada ao interesse do marketing')
   st.markdown(' ')
   st.markdown(' ')
+  
+  #Chamando o modelo
+  #Buscando modelo
+  with open('cluster_fmcg.pkl', 'rb') as file:
+    onehot, std_scaler, kmeans = pkl.load(file)
 
   #Criando espaços de preenchimento
   cliente = st.text_input('Insira o nome do cliente:')
