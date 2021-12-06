@@ -5,6 +5,7 @@
 
 
 #Importando bibliotecas
+import pickle
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -36,9 +37,8 @@ if pag == 'Interagir com a inteligência':
   st.markdown(' ')
   
   #Chamando o modelo
-  #Buscando modelo
   with open('cluster_fmcg.pkl', 'rb') as file:
-    onehot, std_scaler, kmeans = pkl.load(file)
+    onehot, std_scaler, kmeans = pickle.load(file)
 
   #Criando espaços de preenchimento
   cliente = st.text_input('Insira o nome do cliente:')
