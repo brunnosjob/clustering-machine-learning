@@ -167,11 +167,11 @@ elif pag == 'Questão de negócio':
   st.markdown('''
   Um grupo gestor do supermercado (fictício) Vitta está investindo em tecnologia.
   Seu último projeto bem sucedido foi a criação do Vitta Delivery.
-  A empresa de varejo desenvolveu um aplicativo a partir do qual seus clientes realizam suas compras online e o supermercado faz a entrega.
+  A empresa de varejo desenvolveu um aplicativo a partir do qual seus clientes realizam suas compras online e o supermercado faz as entregas.
   
-  O supermercado está com um novo projeto a desenvolver a partir de um piloto.
+  O supermercado está com um novo projeto a desenvolver e deseja implementar um piloto.
   O projeto se constitui do interesse por segmentar seus clientes para elaborar campanhas de marketing específicas para os públicos certos.
-  O envio das campanhas é feita via app diretamente ao celular do usuário.
+  O envio das campanhas é feito via app diretamente ao celular do usuário.
   
   __Plano de trabalho:__
   
@@ -181,13 +181,13 @@ elif pag == 'Questão de negócio':
   
   3 - Compreender o consumo dos públicos;
   
-  4 - Elaborar campanhas de marketing;
+  4 - Elaborar campanhas de marketing a partir dos pontos 1, 2 e 3;
   
   5 - Definir os métodos de entrega das campanhas;
   
-  6 - Acompanhar por métricas as respostas dos clientes às entregas e às camapnhas;
+  6 - Acompanhar por métricas as respostas dos clientes às entregas e às camapanhas;
   
-  7 - Alterar/ajustar os métodos de entrega das campanhas e as camapnhas;
+  7 - Alterar/ajustar os métodos de entrega das campanhas e as camapanhas;
   
   8 - Conclusão do piloto
   
