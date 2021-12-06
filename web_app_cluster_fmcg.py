@@ -244,7 +244,7 @@ elif pag == 'Dashboard':
   st.markdown(' ')
   
   photo2 = Image.open('0_educacao.png')
-  st.image(photo02, use_column_width=True)
+  st.image(photo2, use_column_width=True)
   st.markdown('''
   0 - Ensino básico
   
