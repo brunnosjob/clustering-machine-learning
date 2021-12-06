@@ -148,7 +148,7 @@ if pag == 'Interagir com a inteligência':
     
     __Descrição do público gama:__
     
-    O público gama é predominantemente masculino solteiro, com idade de aproximadamente 38 anos. Há uma relevante quantidade de componentes em relacionamento,
+    O público gama é predominantemente masculino solteiro, com idade de aproximadamente 38 anos. Há uma relevante quantidade de pessoas em relacionamento,
     como casamento ou união estável. Possuem ensino superior e residem em médias e grandes cidades. É o público mais empreendedor, sendo a maior parte empregada,
     e a menor parte empreendedora.
     '''.format(cliente))
