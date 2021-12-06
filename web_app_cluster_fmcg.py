@@ -111,12 +111,10 @@ if pag == 'Interagir com a inteligência':
   #Instrução para o resultado
   if segmento == 0:
     st.markdown('''
+    ---
     __A que público você pertence:__
     
-    {}, você pertence ao público alfa.
-    
-    #### OBS:
-    #### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery para fins do marketing
+    {} pertence ao público alfa.
     
     __Descrição do público alfa:__
     
@@ -135,9 +133,6 @@ if pag == 'Interagir com a inteligência':
     
     {} pertence ao público beta.
     
-    #### OBS:
-    #### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery para fins do marketing
-    
     __Descrição do público beta:__
     
     O público beta é composto pela maioria masculina, todavia, uma quantidade considerável de mulheres compõem esse grupo. A idade desse público está em cerca de 35 anos.
@@ -147,12 +142,11 @@ if pag == 'Interagir com a inteligência':
     
   elif segmento == 2:
     st.markdown('''
+    
+    ---
     __A que público você pertence:__
     
-    {}, você pertence ao público gama.
-    
-    #### OBS:
-    #### A informação a seguir seria conhecida apenas pela empresa fictícia Mercado Delivery para fins do marketing
+    {} pertence ao público gama.
     
     __Descrição do público gama:__
     
