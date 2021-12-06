@@ -109,9 +109,17 @@ if pag == 'Interagir com a inteligência':
   #Segmentando
   segmento = kmeans.predict(X_scaled)
     
-  #Resultado
-  st.markdown('Teste')
-  st.markdown(segmento)
+  #Instrução para o resultado
+  if segmento == 0:
+    st.markdown('''
+    {} pertence ao público alfa.
     
+    __Descrição do público alfa:__
     
+    O público alfa é predominantemente feminino, com idade de aproximadamente 30 anos, estando em algum tipo de relacionamento, como casamento ou união estável,
+    com educação formal básica, residindo maiormente em pequenas cidades. A maior parte está empregada, entretanto, significativa parte está desempregada.
+    Nesse público há poucos empreendedores. A renda desse público está em torno de R$ 2.300,00.
+    
+    ''')
+   
     
