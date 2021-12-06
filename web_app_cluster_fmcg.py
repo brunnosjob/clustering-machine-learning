@@ -246,6 +246,9 @@ elif pag == 'Dashboard':
   photo2 = Image.open('0_educacao.png')
   st.image(photo2, use_column_width=True)
   st.markdown('''
+  
+  __Legenda:__
+  
   0 - Ensino básico
   
   1 - Graduado (a)
@@ -256,3 +259,60 @@ elif pag == 'Dashboard':
   ''')
   st.markdown(' ')
   st.markdown(' ')
+  
+  photo3 = Image.open('0_ocupacao.png')
+  st.image(photo3, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Desempregado
+  
+  1 - Empregado
+  
+  2 - Empreendedor
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo4 = Image.open('0_sexo.png')
+  st.image(photo4, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Masculino
+  
+  1 - Feminino
+  
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+ 
+  photo5 = Image.open('0_estado_civil.png')
+  st.image(photo5, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Solteiro
+  
+  1 - Em relacionamento (Casado ou união estável)
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo6 = Image.open('0_tamanho_civil.png')
+  st.image(photo6, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Cidade pequena
+  
+  1 - Cidade média
+  
+  2 - Cidade grande
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')  
