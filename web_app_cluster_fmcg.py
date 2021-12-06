@@ -160,10 +160,8 @@ if pag == 'Interagir com a inteligência':
     '''.format(cliente))
     
 elif pag == 'Sobre o projeto':
-  st.title('Contextualização')
+  st.title('Questão de negócio')
   st.markdown('''
-  #### Questão de negócio
-  
   Um grupo gestor do supermercado (fictício) Vitta está investindo em tecnologia.
   Seu último projeto bem sucedido foi a criação do Vitta Delivery.
   A empresa de varejo desenvolveu um aplicativo a partir do qual seus clientes realizam suas compras online e o supermercado faz a entrega.
