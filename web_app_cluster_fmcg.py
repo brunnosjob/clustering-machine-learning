@@ -83,3 +83,19 @@ if pag == 'Interagir com a inteligência':
     tamanho_cidade_num = 1
   elif tamanho_cidade == 'Cidade grande':
     tamanho_cidade_num = 2
+    
+    #Pré-processamento
+    #Separando variáveis que não receberão o algoritmo OneHotEncoder e gerando dataframe
+    variaveis_sem_onehot = [[renda, idade, educacao_num, ocupacao_num]]
+    variaveis_sem_onehot_df = pd.DataFrame(variaveis_sem_onehot)
+    
+    #Aplicando OneHotEncoder
+    #Separando variáveis que receberão o algoritmo OneHotEncoder e gerando dataframe
+    variaveis_onehot = [[sexo_num, estado_civil_num, tamanho_cidade_num]]
+    variaveis_onehot_aplicada = onehot.transform(variaveis_onehot)
+    variaveis_onehot_aplicada_df= pd.DataFrame(variaveis_onehot_aplicada)
+    
+    #Concatenando as variáveis
+    
+    
+    
