@@ -231,7 +231,7 @@ Ao fim de cada três meses, há uma reunião com os resultados trimestrais do pi
   
 elif pag == 'Dashboard':
   st.header('Dashboard acerca dos públicos')
-  st.subheader('PCA')
+  st.subheader('Gráfico de segmentação')
   pca = Image.open('pca.png')
   st.image(pca, use_column_width=True)
   st.markdown(' ')
