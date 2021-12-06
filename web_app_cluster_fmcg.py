@@ -19,7 +19,7 @@ from PIL import Image
 st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
 st.sidebar.markdown('''Em breve, disponibilizo o artigo descrevendo o passo a passo do desenvolvimento do modelo.''')
 st.sidebar.title('Menu em construção')
-pag = st.sidebar.selectbox('Selecione a página', ['Interagir com a inteligência', 'Sobre o projeto', 'Dashboard'])
+pag = st.sidebar.selectbox('Selecione a página', ['Interagir com a inteligência', 'Sobre o projeto', 'Dashboard acerca dos públicos'])
 
 st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
 
@@ -229,7 +229,7 @@ Ao fim de cada três meses, há uma reunião com os resultados trimestrais do pi
   Somente a empresa terá acesso ao pertencimento de cada cliente aos seus respectivos públicos.
   ''')
   
-elif pag == 'Dashboard':
+elif pag == 'Dashboard acerca dos públicos':
   st.header('Dashboard acerca dos públicos')
   st.subheader('Gráfico de segmentação')
   pca = Image.open('pca.png')
