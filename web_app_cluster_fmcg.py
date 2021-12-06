@@ -112,7 +112,9 @@ if pag == 'Interagir com a inteligência':
   if segmento == 0:
     st.markdown('''
     ---
-    __A que público você pertence:__
+    ###### Informação para a empresa
+    
+    __A que público o cliente pertence:__
     
     {} pertence ao público alfa.
     
@@ -129,6 +131,8 @@ if pag == 'Interagir com a inteligência':
     st.markdown('''
     
     ---
+    ###### Informação para a empresa
+    
     __A que público o cliente pertence:__
     
     {} pertence ao público beta.
@@ -144,7 +148,9 @@ if pag == 'Interagir com a inteligência':
     st.markdown('''
     
     ---
-    __A que público você pertence:__
+    ###### Informação para a empresa
+    
+    __A que público o cliente pertence:__
     
     {} pertence ao público gama.
     
