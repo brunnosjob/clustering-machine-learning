@@ -160,7 +160,7 @@ if pag == 'Interagir com a inteligência':
     '''.format(cliente))
     
 elif pag == 'Sobre o projeto':
-  st.title('Questão de negócio')
+  st.header('Questão de negócio')
   st.markdown('''
   Um grupo gestor do supermercado (fictício) Vitta está investindo em tecnologia.
   Seu último projeto bem sucedido foi a criação do Vitta Delivery.
