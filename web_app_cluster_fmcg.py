@@ -230,5 +230,29 @@ Ao fim de cada três meses, há uma reunião com os resultados trimestrais do pi
   ''')
   
 elif pag == 'Dashboard':
-  st.header('Página em construção!')
-  st.subheader('Em breve, disponível')
+  st.header('Dashboard acerca dos públicos')
+  st.subheader('Público alfa')
+  
+  photo0 = Image.open('0_renda.png')
+  st.image(photo0, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  phot1 = Image.open('0_idade.png')
+  st.image(photo1, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo2 = Image.open('0_educacao.png')
+  st.image(photo02, use_column_width=True)
+  st.markdown('''
+  0 - Ensino básico
+  
+  1 - Graduado (a)
+  
+  2 - Especializado (a)
+  
+  3 - Doutor (a)
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
