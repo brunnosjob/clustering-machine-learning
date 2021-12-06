@@ -31,9 +31,9 @@ st.sidebar.markdown("- [Github](https://github.com/brunnosjob)")
 #Apresentação da tela de interação com o modelo
 if pag == 'Interagir com a inteligência':
   st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__* ')
+  st.markdown('*(Os valores a seguir podem ser reais ou fictícios. Os dados não são salvos. Essa é uma web app de simulação)*')
   st.header('Mercado Delivery')
   st.subheader('Se cadastre em nosso app')
-  st.markdown('(Os valores a seguir podem ser reais ou fictícios. Os dados não são salvos. Essa é uma web app de simulação)')
   
   #Chamando o modelo
   with open('cluster_fmcg.pkl', 'rb') as file:
