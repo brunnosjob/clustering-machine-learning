@@ -171,9 +171,9 @@ if pag == 'Interagir com a inteligência':
 elif pag == 'Questão de negócio':
   st.header('Questão de negócio')
   st.markdown('''
-  Um grupo gestor do supermercado (fictício) Vitta está investindo em tecnologia.
+  O grupo gestor do supermercado (fictício) Vitta está investindo em tecnologia.
   Seu último projeto bem sucedido foi a criação do Vitta Delivery.
-  A empresa de varejo desenvolveu um aplicativo a partir do qual seus clientes realizam suas compras online e o supermercado faz as entregas.
+  A empresa de varejo desenvolveu um aplicativo a partir do qual seus clientes realizam suas compras onlines e o supermercado faz as entregas.
   
   O supermercado está com um novo projeto a desenvolver e deseja implementar um piloto.
   O projeto se constitui do interesse por segmentar seus clientes para elaborar campanhas de marketing específicas para os públicos certos.
@@ -191,13 +191,13 @@ elif pag == 'Questão de negócio':
   
   5 - Definir os métodos de entrega das campanhas;
   
-  6 - Acompanhar por métricas as respostas dos clientes às entregas e às camapanhas;
+  6 - Acompanhar por métricas as respostas dos clientes às entregas e às campanhas;
   
-  7 - Alterar/ajustar os métodos de entrega das campanhas e as camapanhas;
+  7 - Alterar/ajustar os métodos de entrega das campanhas e as campanhas;
   
   8 - Conclusão do piloto
   
-  A aplicação do pilto terá um primeiro prazo, que é de três meses. Após, terá mais 3 meses.
+  A aplicação do piloto terá um primeiro prazo, que é de três meses. Após, terá mais 3 meses.
   
   __Etapas:__ 
   
@@ -205,7 +205,7 @@ elif pag == 'Questão de negócio':
   
   - A terceira e a quarta semana ficarão para análise da resposta e reação dos clientes;
   
-  Métricas a serem observadas:
+  __Métricas a serem observadas:__
   
   - Cliques para abrir as propagandas;
   
