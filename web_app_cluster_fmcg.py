@@ -45,7 +45,7 @@ if pag == 'Interagir com a inteligência':
   cliente = st.text_input('Insira seu nome:')
   renda = st.number_input('Insira sua renda:', 0, 1000000, 0)
   idade = st.number_input('Insira sua idade:', 18, 150, 18)
-  educacao = st.selectbox('Selecione sua escolaridade:', ['Ensino básico', 'Graduado (a)', 'Especializado (a)', 'Doutor (a)'])
+  educacao = st.selectbox('Selecione sua escolaridade:', ['Ensino básico', 'Graduado', 'Especializado', 'Doutor'])
   ocupacao = st.selectbox('Selecione sua condição atual:',['Desempregado', 'Empregado', 'Empreendedor'])
   sexo = st.selectbox('Selecione seu sexo:', ['Feminino', 'Masculino'])
   estado_civil = st.selectbox('Selecione seu estado civil:', ['Solteiro', 'Casado'])
@@ -53,11 +53,11 @@ if pag == 'Interagir com a inteligência':
   #Convertendo inputs educação
   if educacao == 'Ensino básico':
     educacao_num = 0
-  elif educacao == 'Graduado (a)':
+  elif educacao == 'Graduado':
     educacao_num = 1
-  elif educacao == 'Especializado (a)':
+  elif educacao == 'Especializado':
     educacao_num = 2
-  elif educacao == 'Doutor (a)':
+  elif educacao == 'Doutor':
     educacao_num = 3
     
   #Convertendo inputs ocupação
@@ -305,7 +305,7 @@ elif pag == 'Dashboard acerca dos públicos':
   st.image(contagem, use_column_width=True) 
   st.markdown('''
   Os clusters (públicos) com maiores quantidades de membros são o 0 (alfa) e o 1 (beta).
-  O que apresenta menor quantidade é o 2 (gama).
+  O que apresenta menor quantidade é o 2 (gamma).
   ''')
   st.markdown(' ')
   st.markdown(' ') 
@@ -459,35 +459,63 @@ elif pag == 'Dashboard acerca dos públicos':
 
   st.subheader('Público gamma')
   
-  photo20 = Image.open('2_renda.png')
+  photo20 = Image.open('31_idade.png')
   st.image(photo20, use_column_width=True)
   st.markdown(' ')
   st.markdown(' ')
   
-  photo21 = Image.open('2_idade.png')
+  photo21 = Image.open('32_renda.png')
   st.image(photo21, use_column_width=True)
   st.markdown(' ')
   st.markdown(' ')
   
-  photo22 = Image.open('2_educacao.png')
+  photo22 = Image.open('33_sexo.png')
   st.image(photo22, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Masculino
+  
+  1 - Feminino
+  
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo23 = Image.open('34_civil.png')
+  st.image(photo23, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Solteiro
+  
+  1 - Casado/União estável
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo24 = Image.open('35_ed.png')
+  st.image(photo24, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
   
   0 - Ensino básico
   
-  1 - Graduado (a)
+  1 - Graduado
   
-  2 - Especializado (a)
+  2 - Especializado
   
-  3 - Doutor (a)
+  3 - Doutor
+  
   ''')
   st.markdown(' ')
   st.markdown(' ')
-  
-  photo23 = Image.open('2_ocupacao.png')
-  st.image(photo23, use_column_width=True)
+ 
+  photo25 = Image.open('36_oc.png')
+  st.image(photo25, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
@@ -500,9 +528,21 @@ elif pag == 'Dashboard acerca dos públicos':
   ''')
   st.markdown(' ')
   st.markdown(' ')
+
+    st.subheader('Público delta')
   
-  photo24 = Image.open('2_sexo.png')
-  st.image(photo24, use_column_width=True)
+  photo40 = Image.open('41_idade.png')
+  st.image(photo40, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo41 = Image.open('42_renda.png')
+  st.image(photo41, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo42 = Image.open('43_sexo.png')
+  st.image(photo42, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
@@ -514,30 +554,122 @@ elif pag == 'Dashboard acerca dos públicos':
   ''')
   st.markdown(' ')
   st.markdown(' ')
- 
-  photo25 = Image.open('2_estado_civil.png')
-  st.image(photo25, use_column_width=True)
+  
+  photo43 = Image.open('44_civil.png')
+  st.image(photo43, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
   
   0 - Solteiro
   
-  1 - Em relacionamento (Casado ou união estável)
+  1 - Casado/União estável
   ''')
   st.markdown(' ')
   st.markdown(' ')
   
-  photo26 = Image.open('2_tamanho_cidade.png')
-  st.image(photo26, use_column_width=True)
+  photo44 = Image.open('45_ed.png')
+  st.image(photo44, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
   
-  0 - Cidade pequena
+  0 - Ensino básico
   
-  1 - Cidade média
+  1 - Graduado
   
-  2 - Cidade grande
-  ''')  
+  2 - Especializado
+  
+  3 - Doutor
+  
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+ 
+  photo45 = Image.open('46_oc.png')
+  st.image(photo45, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Desempregado
+  
+  1 - Empregado
+  
+  2 - Empreendedor
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+
+   st.subheader('Público epsilon')
+  
+  photo50 = Image.open('51_idade.png')
+  st.image(photo50, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo51 = Image.open('52_renda.png')
+  st.image(photo51, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo52 = Image.open('53_sexo.png')
+  st.image(photo52, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Masculino
+  
+  1 - Feminino
+  
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo53 = Image.open('54_civil.png')
+  st.image(photo53, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Solteiro
+  
+  1 - Casado/União estável
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo54 = Image.open('55_ed.png')
+  st.image(photo24, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Ensino básico
+  
+  1 - Graduado
+  
+  2 - Especializado
+  
+  3 - Doutor
+  
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+ 
+  photo55 = Image.open('56_oc.png')
+  st.image(photo55, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Desempregado
+  
+  1 - Empregado
+  
+  2 - Empreendedor
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
 
