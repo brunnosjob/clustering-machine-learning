@@ -158,11 +158,11 @@ if pag == 'Interagir com a inteligência':
     
     __A que público o cliente pertence:__
     
-    {} pertence ao público gama.
+    {} pertence ao público gamma.
     
-    __Descrição do público gama:__
+    __Descrição do público gamma:__
     
-    O público gama é mais experiente do que os anteriores, 
+    O público gamma é mais experiente do que os anteriores, 
     apresentando uma probabilidade mais alta para idades entre aproximadamente 42 e 59 anos 
     É um grupo predominantemente feminino, em uma relação como casamento ou união estável e apresenta especialização acadêmica. 
     Há maior frequência de salários entre R$ 2.000,00 e R$ 3.000,00. É o público mais feminino dentre os demais.
@@ -285,16 +285,28 @@ elif pag == 'Dashboard acerca dos públicos':
   st.markdown('#### Sistema em atualização')
   st.header('Dashboard acerca dos públicos')
   st.subheader('Gráfico de segmentação')
-  pca = Image.open('pca.png')
+  pca = Image.open('cluster_grafico.png')
   st.image(pca, use_column_width=True)
+  st.markdown('''
+  De acordo com o gráfico, os clusters não estão significativamente agrupados; 
+  há um espalhamento dos dados, gerando um relevante mistura visual. 
+  O expectado é um agrupamento melhormente definido. No entanto, há um razoável padrão. 
+  O cluster azul não se encontra na altura do cluster violeta. O cluster vermelho se aproxima mais do cluster violeta. 
+  O cluster laranja está em posição semelhante a do cluster azul, ficando abaixo da altura do cluster violeta. 
+  O cluster roxo tende a estar à esquerda do cluster azul, a uma altura maior.
+  ''')
   st.markdown(' ')
   st.markdown(' ') 
   st.markdown(' ')
   st.markdown(' ') 
                    
   st.subheader('Contagem de clientes em cada público/grupo')
-  contagem = Image.open('frequencia_cada_publico.png')
-  st.image(contagem, use_column_width=True)  
+  contagem = Image.open('freq_gp.png')
+  st.image(contagem, use_column_width=True) 
+  st.markdown('''
+  Os clusters (públicos) com maiores quantidades de membros são o 0 (alfa) e o 1 (beta).
+  O que apresenta menor quantidade é o 2 (gama).
+  ''')
   st.markdown(' ')
   st.markdown(' ') 
   st.markdown(' ')
@@ -302,123 +314,64 @@ elif pag == 'Dashboard acerca dos públicos':
   
   st.subheader('Público alfa')
   
-  photo0 = Image.open('0_renda.png')
+  photo0 = Image.open('10_idade.png')
   st.image(photo0, use_column_width=True)
   st.markdown(' ')
   st.markdown(' ')
   
-  photo1 = Image.open('0_idade.png')
+  photo1 = Image.open('11_renda.png')
   st.image(photo1, use_column_width=True)
   st.markdown(' ')
   st.markdown(' ')
   
-  photo2 = Image.open('0_educacao.png')
+  photo2 = Image.open('12_sexo.png')
   st.image(photo2, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
   
-  0 - Ensino básico
+  0 - Masculino
   
-  1 - Graduado (a)
+  1 - Feminino
   
-  2 - Especializado (a)
-  
-  3 - Doutor (a)
   ''')
   st.markdown(' ')
   st.markdown(' ')
   
-  photo3 = Image.open('0_ocupacao.png')
+  photo3 = Image.open('13_civil.png')
   st.image(photo3, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
   
-  0 - Desempregado
-  
-  1 - Empregado
-  
-  2 - Empreendedor
-  ''')
-  st.markdown(' ')
-  st.markdown(' ')
-  
-  photo4 = Image.open('0_sexo.png')
-  st.image(photo4, use_column_width=True)
-  st.markdown('''
-  
-  __Legenda:__
-  
-  0 - Masculino
-  
-  1 - Feminino
-  
-  ''')
-  st.markdown(' ')
-  st.markdown(' ')
- 
-  photo5 = Image.open('0_estado_civil.png')
-  st.image(photo5, use_column_width=True)
-  st.markdown('''
-  
-  __Legenda:__
-  
   0 - Solteiro
   
-  1 - Em relacionamento (Casado ou união estável)
+  1 - Casado/União estável
+  
   ''')
   st.markdown(' ')
   st.markdown(' ')
   
-  photo6 = Image.open('0_tamanho_cidade.png')
-  st.image(photo6, use_column_width=True)
-  st.markdown('''
-  
-  __Legenda:__
-  
-  0 - Cidade pequena
-  
-  1 - Cidade média
-  
-  2 - Cidade grande
-  ''')
-  st.markdown(' ')
-  st.markdown(' ') 
-  st.markdown(' ')
-  st.markdown(' ') 
-
-  st.subheader('Público beta')
-  
-  photo10 = Image.open('1_renda.png')
-  st.image(photo10, use_column_width=True)
-  st.markdown(' ')
-  st.markdown(' ')
-  
-  photo11 = Image.open('1_idade.png')
-  st.image(photo11, use_column_width=True)
-  st.markdown(' ')
-  st.markdown(' ')
-  
-  photo12 = Image.open('1_educacao.png')
-  st.image(photo12, use_column_width=True)
+  photo4 = Image.open('14_ed.png')
+  st.image(photo4, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
   
   0 - Ensino básico
   
-  1 - Graduado (a)
+  1 - Graduado
   
-  2 - Especializado (a)
+  2 - Especializado
   
-  3 - Doutor (a)
+  3 - Doutor
+  
   ''')
   st.markdown(' ')
   st.markdown(' ')
-  
-  photo13 = Image.open('1_ocupacao.png')
-  st.image(photo13, use_column_width=True)
+ 
+  photo5 = Image.open('15_oc.png')
+  st.image(photo5, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
@@ -431,9 +384,21 @@ elif pag == 'Dashboard acerca dos públicos':
   ''')
   st.markdown(' ')
   st.markdown(' ')
+
+  st.subheader('Público beta')
   
-  photo14 = Image.open('1_sexo.png')
-  st.image(photo14, use_column_width=True)
+  photo10 = Image.open('21_idade.png')
+  st.image(photo10, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo11 = Image.open('22_renda.png')
+  st.image(photo11, use_column_width=True)
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  photo12 = Image.open('23_sexo.png')
+  st.image(photo12, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
@@ -441,40 +406,56 @@ elif pag == 'Dashboard acerca dos públicos':
   0 - Masculino
   
   1 - Feminino
-  
   ''')
   st.markdown(' ')
   st.markdown(' ')
- 
-  photo15 = Image.open('1_estado_civil.png')
-  st.image(photo15, use_column_width=True)
+  
+  photo13 = Image.open('24_civil.png')
+  st.image(photo13, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
   
   0 - Solteiro
   
-  1 - Em relacionamento (Casado ou união estável)
+  1 - Casado/União estável
+  
   ''')
   st.markdown(' ')
   st.markdown(' ')
   
-  photo16 = Image.open('1_tamanho_cidade.png')
-  st.image(photo16, use_column_width=True)
+  photo14 = Image.open('25_ed.png')
+  st.image(photo14, use_column_width=True)
   st.markdown('''
   
   __Legenda:__
   
-  0 - Cidade pequena
+  0 - Ensino básico
   
-  1 - Cidade média
+  1 - Graduado
   
-  2 - Cidade grande
+  2 - Especializado
+  
+  3 - Doutor
+  
   ''')
   st.markdown(' ')
-  st.markdown(' ') 
   st.markdown(' ')
-  st.markdown(' ') 
+ 
+  photo15 = Image.open('26_oc.png')
+  st.image(photo15, use_column_width=True)
+  st.markdown('''
+  
+  __Legenda:__
+  
+  0 - Desempregado
+  
+  1 - Empregado
+  
+  2 - Empreendedor
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
 
   st.subheader('Público gamma')
   
