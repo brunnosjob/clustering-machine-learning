@@ -698,22 +698,4 @@ elif pag == 'Dashboard acerca dos públicos':
   sendo o grupo mais novo, com maior frequência de idade entre aproximadamente 25 e 30 anos. 
   A maior parte é graduada. A maior parte trabalha, mas há significativa quantidade desempregada. É o masculino mais desempregado.
   ''')
-  st.markdown(' ')
-  st.markdown(' ')
-  st.markdown(' ')
-  st.markdown(' ')
-  st.subheader('Conclusão')
-  st.markdown('''
-  O produto final foi testado e está funcionando. Conforme o gráfico de PCA, os clusters não estão perfeitamente separados; 
-  há uma mistura dos pontos, porém, apresentando razoável padrão de localidade, como descrito na etapa 5.2. 
-  Isso indica que certas segmentações automáticas, isso é, classificações, podem parecer imprecisas.
   
-  Um produto como esse deve ser experimentado, acompanhado e metrificado. 
-  À medida do desempenho do modelo, ações são tomadas para melhoria ou manutenção da qualidade do produto. O fato é que não há mágica, 
-  há trabalho e dedicação em tornar o produto sempre melhor e satisfatório, ou seja, que realmente agregue valor.
-  
-  A clusterização é extremamente útil para segmentação de clientes, agrupamentos de dados em BIG Data, 
-  agrupamento de países, isso é, agrupamento de similaridades em diferentes contextos. 
-  Não é uma tecnologia 100% eficaz, entretanto, potencializa as análises e as ações a partir dos dados segmentados. 
-  Esse projeto demonstra como a segmentação de clientes pode proporcionar análises mais precisas sobre públicos.
-  ''')
