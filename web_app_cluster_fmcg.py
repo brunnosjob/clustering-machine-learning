@@ -529,7 +529,7 @@ elif pag == 'Dashboard acerca dos públicos':
   st.markdown(' ')
   st.markdown(' ')
 
-   st.subheader('Público delta')
+  st.subheader('Público delta')
   
   photo40 = Image.open('41_idade.png')
   st.image(photo40, use_column_width=True)
