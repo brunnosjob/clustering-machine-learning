@@ -289,7 +289,7 @@ elif pag == 'Dashboard acerca dos públicos':
   st.image(pca, use_column_width=True)
   st.markdown('''
   De acordo com o gráfico, os clusters não estão significativamente agrupados; 
-  há um espalhamento dos dados, gerando um relevante mistura visual. 
+  há um espalhamento dos dados, gerando uma relevante mistura visual. 
   O expectado é um agrupamento melhormente definido. No entanto, há um razoável padrão. 
   O cluster azul não se encontra na altura do cluster violeta. O cluster vermelho se aproxima mais do cluster violeta. 
   O cluster laranja está em posição semelhante a do cluster azul, ficando abaixo da altura do cluster violeta. 
