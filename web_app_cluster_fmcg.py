@@ -672,4 +672,48 @@ elif pag == 'Dashboard acerca dos públicos':
   ''')
   st.markdown(' ')
   st.markdown(' ')
-
+  st.markdown(' ')
+  st.markdown(' ')
+  
+  st.subheader('Descrição dos clusters')
+  st.markdown('''
+  O cluster 0 é predominantemente masculino e solteiro, com idade mais frequente entre 30 e 39 anos. 
+  A maior parte do cliente desse grupo é graduado, havendo uma significativa quantidade com ensino de base. 
+  A maior parte está empregada, havendo uma significativa quantidade de empreendedores. É o público mais empreendedor.
+  
+  O cluster 1 é predominantemente feminino, em um relacionamento como casamento ou união estável. 
+  Frequentemente, apresenta idades entre aproximadamente 25 e 30 anos. 
+  Seus salários mais frequentes estão entre aproximadamente R$ 2.000,00 e R$ 2.800,00. 
+  A maior parte é graduada, havendo uma maior quantidade de empregados e uma significativa quantidade de desempregados. É o grupo mais novo.
+  
+  O cluster 2 é mais experiente do que os anteriores, apresentando uma probabilidade mais alta para idades entre aproximadamente 42 e 59 anos. 
+  É um grupo predominantemente feminino, em uma relação como casamento ou união estável e apresenta especialização acadêmica. 
+  Há maior frequência de salários entre R$ 2.000,00 e R$ 3.000,00. É o público mais feminino.
+  
+  O cluster 3 é unissex e solteiro, apresentando graduação, com uma minoria significativa de pessoas com ensino básico. 
+  A tendência é de idade entre aproximadamente 25 e 39 anos. Sua renda predomina entre R$ 1.400,00 e R$ 2.400,00. A maior parte está desempregada. 
+  É público o mais desempregado.
+  
+  O cluster 4 é predominantemente masculino e em relacionamento, como casamento ou união estável, 
+  sendo o grupo mais novo, com maior frequência de idade entre aproximadamente 25 e 30 anos. 
+  A maior parte é graduada. A maior parte trabalha, mas há significativa quantidade desempregada. É o masculino mais desempregado.
+  ''')
+  st.markdown(' ')
+  st.markdown(' ')
+  st.markdown(' ')
+  st.markdown(' ')
+  st.subheader('Conclusão')
+  st.markdown('''
+  O produto final foi testado e está funcionando. Conforme o gráfico de PCA, os clusters não estão perfeitamente separados; 
+  há uma mistura dos pontos, porém, apresentando razoável padrão de localidade, como descrito na etapa 5.2. 
+  Isso indica que certas segmentações automáticas, isso é, classificações, podem parecer imprecisas.
+  
+  Um produto como esse deve ser experimentado, acompanhado e metrificado. 
+  À medida do desempenho do modelo, ações são tomadas para melhoria ou manutenção da qualidade do produto. O fato é que não há mágica, 
+  há trabalho e dedicação em tornar o produto sempre melhor e satisfatório, ou seja, que realmente agregue valor.
+  
+  A clusterização é extremamente útil para segmentação de clientes, agrupamentos de dados em BIG Data, 
+  agrupamento de países, isso é, agrupamento de similaridades em diferentes contextos. 
+  Não é uma tecnologia 100% eficaz, entretanto, potencializa as análises e as ações a partir dos dados segmentados. 
+  Esse projeto demonstra como a segmentação de clientes pode proporcionar análises mais precisas sobre públicos.
+  ''')
