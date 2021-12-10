@@ -17,7 +17,9 @@ from PIL import Image
 #Criando interface inicial
 #Menu
 st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
-st.sidebar.markdown('''Em breve, disponibilizo o artigo descrevendo o passo a passo do desenvolvimento do modelo.''')
+st.sidebar.markdown('''
+Artigo descrevendo o passo a passo do projeto: [Medium](https://br-cienciadedados.medium.com/projeto-de-machine-learning-iv-6ef85889aea7)
+''')
 st.sidebar.title('Menu em construção')
 pag = st.sidebar.selectbox('Selecione a página', ['Interagir com a inteligência', 'Questão de negócio', 'Relatório'])
 
@@ -31,7 +33,6 @@ st.sidebar.markdown("- [Github](https://github.com/brunnosjob)")
 
 #Apresentação da tela de interação com o modelo
 if pag == 'Interagir com a inteligência':
-  st.markdown('#### Sistema em atualização')
   st.markdown('*__Observação: para mais informações acerca do projeto, clique na seta no canto esquerdo superior da tela__* ')
   st.markdown('*(Os valores a seguir podem ser reais ou fictícios. Os dados não são salvos. Essa é uma web app de simulação)*')
   st.header('Vitta Delivery')
@@ -214,7 +215,6 @@ if pag == 'Interagir com a inteligência':
     '''.format(cliente))
     
 elif pag == 'Questão de negócio':
-  st.markdown('#### Sistema em atualização')
   st.header('Questão de negócio')
   st.markdown('''
   O grupo gestor do supermercado (fictício) Vitta está investindo em tecnologia.
@@ -282,7 +282,6 @@ Ao fim de cada três meses, há uma reunião com os resultados trimestrais do pi
   ''')
   
 elif pag == 'Relatório':
-  st.markdown('#### Sistema em atualização')
   st.header('Dashboard acerca dos públicos')
   st.subheader('Gráfico de segmentação')
   pca = Image.open('cluster_grafico.png')
