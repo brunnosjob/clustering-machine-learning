@@ -19,7 +19,7 @@ from PIL import Image
 st.sidebar.subheader('Projeto de portfólio de Ciência de Dados')
 st.sidebar.markdown('''Em breve, disponibilizo o artigo descrevendo o passo a passo do desenvolvimento do modelo.''')
 st.sidebar.title('Menu em construção')
-pag = st.sidebar.selectbox('Selecione a página', ['Interagir com a inteligência', 'Questão de negócio', 'Dashboard acerca dos públicos'])
+pag = st.sidebar.selectbox('Selecione a página', ['Interagir com a inteligência', 'Questão de negócio', 'Relatório'])
 
 st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
 
@@ -281,7 +281,7 @@ Ao fim de cada três meses, há uma reunião com os resultados trimestrais do pi
   Somente a empresa terá acesso ao pertencimento de cada cliente aos seus respectivos públicos.
   ''')
   
-elif pag == 'Dashboard acerca dos públicos':
+elif pag == 'Relatório':
   st.markdown('#### Sistema em atualização')
   st.header('Dashboard acerca dos públicos')
   st.subheader('Gráfico de segmentação')
@@ -384,6 +384,11 @@ elif pag == 'Dashboard acerca dos públicos':
   ''')
   st.markdown(' ')
   st.markdown(' ')
+  st.markdown('''
+  O cluster 0 é predominantemente masculino e solteiro, com idade mais frequente entre 30 e 39 anos. 
+  A maior parte do cliente desse grupo é graduado, havendo uma significativa quantidade com ensino de base. 
+  A maior parte está empregada, havendo uma significativa quantidade de empreendedores. É o público mais empreendedor.
+  ''')
 
   st.subheader('Público beta')
   
@@ -456,6 +461,12 @@ elif pag == 'Dashboard acerca dos públicos':
   ''')
   st.markdown(' ')
   st.markdown(' ')
+  st.markdown('''
+  O cluster 1 é predominantemente feminino, em um relacionamento como casamento ou união estável. 
+  Frequentemente, apresenta idades entre aproximadamente 25 e 30 anos. 
+  Seus salários mais frequentes estão entre aproximadamente R$ 2.000,00 e R$ 2.800,00. 
+  A maior parte é graduada, havendo uma maior quantidade de empregados e uma significativa quantidade de desempregados. É o grupo mais novo.
+  ''')
 
   st.subheader('Público gamma')
   
@@ -528,6 +539,11 @@ elif pag == 'Dashboard acerca dos públicos':
   ''')
   st.markdown(' ')
   st.markdown(' ')
+  st.markdown('''
+  O cluster 2 é mais experiente do que os anteriores, apresentando uma probabilidade mais alta para idades entre aproximadamente 42 e 59 anos. 
+  É um grupo predominantemente feminino, em uma relação como casamento ou união estável e apresenta especialização acadêmica. 
+  Há maior frequência de salários entre R$ 2.000,00 e R$ 3.000,00. É o público mais feminino.
+  ''')
 
   st.subheader('Público delta')
   
@@ -600,6 +616,11 @@ elif pag == 'Dashboard acerca dos públicos':
   ''')
   st.markdown(' ')
   st.markdown(' ')
+  st.markdown('''
+  O cluster 3 é unissex e solteiro, apresentando graduação, com uma minoria significativa de pessoas com ensino básico. 
+  A tendência é de idade entre aproximadamente 25 e 39 anos. Sua renda predomina entre R$ 1.400,00 e R$ 2.400,00. A maior parte está desempregada. 
+  É público o mais desempregado.
+  ''')
 
   st.subheader('Público epsilon')
   
@@ -672,28 +693,7 @@ elif pag == 'Dashboard acerca dos públicos':
   ''')
   st.markdown(' ')
   st.markdown(' ')
-  st.markdown(' ')
-  st.markdown(' ')
-  
-  st.subheader('Descrição dos clusters')
   st.markdown('''
-  O cluster 0 é predominantemente masculino e solteiro, com idade mais frequente entre 30 e 39 anos. 
-  A maior parte do cliente desse grupo é graduado, havendo uma significativa quantidade com ensino de base. 
-  A maior parte está empregada, havendo uma significativa quantidade de empreendedores. É o público mais empreendedor.
-  
-  O cluster 1 é predominantemente feminino, em um relacionamento como casamento ou união estável. 
-  Frequentemente, apresenta idades entre aproximadamente 25 e 30 anos. 
-  Seus salários mais frequentes estão entre aproximadamente R$ 2.000,00 e R$ 2.800,00. 
-  A maior parte é graduada, havendo uma maior quantidade de empregados e uma significativa quantidade de desempregados. É o grupo mais novo.
-  
-  O cluster 2 é mais experiente do que os anteriores, apresentando uma probabilidade mais alta para idades entre aproximadamente 42 e 59 anos. 
-  É um grupo predominantemente feminino, em uma relação como casamento ou união estável e apresenta especialização acadêmica. 
-  Há maior frequência de salários entre R$ 2.000,00 e R$ 3.000,00. É o público mais feminino.
-  
-  O cluster 3 é unissex e solteiro, apresentando graduação, com uma minoria significativa de pessoas com ensino básico. 
-  A tendência é de idade entre aproximadamente 25 e 39 anos. Sua renda predomina entre R$ 1.400,00 e R$ 2.400,00. A maior parte está desempregada. 
-  É público o mais desempregado.
-  
   O cluster 4 é predominantemente masculino e em relacionamento, como casamento ou união estável, 
   sendo o grupo mais novo, com maior frequência de idade entre aproximadamente 25 e 30 anos. 
   A maior parte é graduada. A maior parte trabalha, mas há significativa quantidade desempregada. É o masculino mais desempregado.
