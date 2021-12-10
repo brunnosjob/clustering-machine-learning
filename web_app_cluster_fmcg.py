@@ -38,7 +38,7 @@ if pag == 'Interagir com a inteligência':
   st.subheader('Se cadastre em nosso app')
   
   #Chamando o modelo
-  with open('cluster_fmcg.pkl', 'rb') as file:
+  with open('cluster_vitta_delivery.pkl', 'rb') as file:
     onehot, scaler, kmeans = pickle.load(file)
 
   #Criando espaços de preenchimento
@@ -49,7 +49,6 @@ if pag == 'Interagir com a inteligência':
   ocupacao = st.selectbox('Selecione sua condição atual:',['Desempregado', 'Empregado', 'Empreendedor'])
   sexo = st.selectbox('Selecione seu sexo:', ['Feminino', 'Masculino'])
   estado_civil = st.selectbox('Selecione seu estado civil:', ['Solteiro', 'Casado'])
-  tamanho_cidade = st.selectbox('Selecione o tipo de cidade em que você reside:', ['Cidade pequena', 'Cidade média', 'Cidade grande'])
   
   #Convertendo inputs educação
   if educacao == 'Ensino básico':
@@ -81,14 +80,7 @@ if pag == 'Interagir com a inteligência':
     estado_civil_num = 0
   elif estado_civil == 'Casado':
     estado_civil_num = 1
-    
-  #Convertendo inputs tamanho da cidade
-  if tamanho_cidade == 'Cidade pequena':
-    tamanho_cidade_num = 0
-  elif tamanho_cidade == 'Cidade média':
-    tamanho_cidade_num = 1
-  elif tamanho_cidade == 'Cidade grande':
-    tamanho_cidade_num = 2
+  
     
   #Pré-processamento
   #Separando variáveis que não receberão o algoritmo OneHotEncoder e gerando dataframe
@@ -97,7 +89,7 @@ if pag == 'Interagir com a inteligência':
     
   #Aplicando OneHotEncoder
   #Separando variáveis que receberão o algoritmo OneHotEncoder e gerando dataframe
-  variaveis_onehot = [[sexo_num, estado_civil_num, tamanho_cidade_num]]
+  variaveis_onehot = [[sexo_num, estado_civil_num]]
   variaveis_onehot_aplicada = onehot.transform(variaveis_onehot).toarray()
   variaveis_onehot_aplicada_df= pd.DataFrame(variaveis_onehot_aplicada)
     
@@ -116,7 +108,7 @@ if pag == 'Interagir com a inteligência':
     ---
     ##### Informação para a empresa
     
-    Há três públicos.
+    Há cinco públicos.
     
     __A que público o cliente pertence:__
     
@@ -124,10 +116,12 @@ if pag == 'Interagir com a inteligência':
     
     __Descrição do público alfa:__
     
-    O público alfa é predominantemente feminino,
-    havendo uma menor quantidade masculina. Esse é um público com idade de aproximadamente 30 anos, estando em algum tipo de relacionamento, como casamento ou união estável,
-    com educação formal básica, residindo maiormente em pequenas cidades. A maior parte está empregada, entretanto, significativa parte está desempregada.
-    Nesse público há poucos empreendedores. A renda desse público está em torno de R$ 2.300,00.
+    O público alfa é predominantemente masculino e solteiro, 
+    com idade mais frequente entre 30 e 39 anos. A maior parte do cliente desse grupo é graduado, 
+    havendo uma significativa quantidade com ensino de base. A maior parte está empregada, 
+    havendo uma significativa quantidade de empreendedores. 
+    Sua renda média está em aproximadamente R$ 2.800,00.
+    É o público mais empreendedor.
     
     '''.format(cliente))
    
@@ -137,7 +131,7 @@ if pag == 'Interagir com a inteligência':
     ---
     ##### Informação para a empresa
     
-    Há três públicos.
+    Há cinco públicos.
     
     __A que público o cliente pertence:__
     
@@ -145,9 +139,13 @@ if pag == 'Interagir com a inteligência':
     
     __Descrição do público beta:__
     
-    O público beta é composto pela maioria masculina, todavia, uma quantidade considerável de mulheres compõem esse grupo. A idade desse público está em cerca de 35 anos.
-    É um público solteiro e graduado, residindo em pequenas cidades. A maior parte do grupo está desempregada. Mas há uma relevante quantidade de pessoas empregadas.
-    Esse público não tem perfil empreendedor. Sua renda está em torno de R$ 2.000,00. 25% do público apresenta renda de até aproximadamente R$ 1.600,00.
+    O público beta  é predominantemente feminino, 
+    em um relacionamento como casamento ou união estável. 
+    Frequentemente, apresenta idades entre aproximadamente 25 e 30 anos. 
+    Seus salários mais frequentes estão entre aproximadamente R$ 2.000,00 e R$ 2.800,00. 
+    A maior parte é graduada, havendo uma maior quantidade de empregados e uma significativa quantidade de desempregados. 
+    É o público mais novo.
+    
     '''.format(cliente))
     
   elif segmento == 2:
@@ -156,7 +154,7 @@ if pag == 'Interagir com a inteligência':
     ---
     ##### Informação para a empresa
     
-    Há três públicos.
+    Há cinco públicos.
     
     __A que público o cliente pertence:__
     
@@ -164,9 +162,55 @@ if pag == 'Interagir com a inteligência':
     
     __Descrição do público gama:__
     
-    O público gama é predominantemente masculino solteiro, com idade de aproximadamente 38 anos. Há uma relevante quantidade de pessoas em relacionamento,
-    como casamento ou união estável. Possuem ensino superior e residem em médias e grandes cidades. É o público mais empreendedor, sendo a maior parte empregada,
-    e a menor parte empreendedora. A renda desse público está em torno de R$ 2.900,00.
+    O público gama é mais experiente do que os anteriores, 
+    apresentando uma probabilidade mais alta para idades entre aproximadamente 42 e 59 anos 
+    É um grupo predominantemente feminino, em uma relação como casamento ou união estável e apresenta especialização acadêmica. 
+    Há maior frequência de salários entre R$ 2.000,00 e R$ 3.000,00. É o público mais feminino dentre os demais.
+    
+    '''.format(cliente))
+    
+  if segmento == 3:
+    st.markdown('''
+    ---
+    ##### Informação para a empresa
+    
+    Há cinco públicos.
+    
+    __A que público o cliente pertence:__
+    
+    {} pertence ao público delta.
+    
+    __Descrição do público delta:__
+    
+    O público delta é unissex e solteiro, apresentando graduação, 
+    com uma minoria significativa de pessoas com ensino básico. 
+    A tendência é de idade entre aproximadamente 25 e 39 anos. 
+    Sua renda predomina entre R$ 1.400,00 e R$ 2.400,00. 
+    A maior parte está desempregada. É o público mais desempregado.
+    
+    '''.format(cliente))
+    
+  if segmento == 4:
+    st.markdown('''
+    ---
+    ##### Informação para a empresa
+    
+    Há cinco públicos.
+    
+    __A que público o cliente pertence:__
+    
+    {} pertence ao público epsilon.
+    
+    __Descrição do público epsilon:__
+    
+    O público epsilon é predominantemente masculino e em relacionamento, 
+    como casamento ou união estável, sendo o grupo mais novo, 
+    com maior frequência de idade entre aproximadamente 25 e 30 anos. 
+    A maior parte é graduada. A maior parte trabalha, 
+    mas há significativa quantidade desempregada. É o público masculino mais desempregado.
+    
+
+    
     '''.format(cliente))
     
 elif pag == 'Questão de negócio':
